@@ -10,7 +10,8 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 
 
     <title>Survey</title>
@@ -26,165 +27,119 @@
             <form>
                 <div class="form-group">
                     <label for="name">Name (Required)</label>
-                    <input type="text" class="form-control" id="firstLastName" placeholder="First Last Name">
+                    <input type="text" class="form-control" id="userName" placeholder="Name">
                 </div>
                 <div class="form-group">
                     <label for="image">Link to Photo Image (Required)</label>
-                    <input type="text" class="form-control" id="photoImage" placeholder="URL or Link">
+                    <input type="text" class="form-control" id="userPhoto" placeholder="URL or Link">
                 </div>
                 <hr>
             </form>
+
             <h3>Question 1</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>How do you spend your free time?</option>
-                    <option value="1">1. Free Time!? Ain't nobody got time for that!</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q1">
+                <option selected>How do you spend your free time?</option>
+                <option value="1">1. Free Time!? Ain't nobody got time for that!</option>
+                <option value="2">2. I'm a hobbyist and DIY junkie!</option>
+                <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
+                <option value="4">4. I spend time with people I love.</option>
+                <option value="5">5. I have a passport and I'm not afraid to use it!</option>
+            </select>
 
             <h3>Question 2</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>What is the ideal number of calls a couple should exchange in a day?</option>
-                    <option value="1">1. I only speak in emojis :)</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q2">
+                <option selected>What is the ideal number of calls a couple should exchange in a day?</option>
+                <option value="1">1. I only speak in emojis :)</option>
+                <option value="2">2. 1 and Done!</option>
+                <option value="3">3. 2 to 3</option>
+                <option value="4">4. As many as needed. Communication is Key!</option>
+                <option value="5">5. This line has been disconnected or is no longer in service ...</option>
+            </select>
+
 
             <h3>Question 3</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>If money and career were no object, what would you really be doing?</option>
-                    <option value="1">1. I only speak in emojis :)</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q3">
+                <option selected>If money and career were no object, what would you really be doing?</option>
+                <option value="1">1. Living with my parents.</option>
+                <option value="2">2. Touring the world and eating tasty food.</option>
+                <option value="3">3. I'd help others</option>
+                <option value="4">4. I'd play video games all day (don't judge me)</option>
+                <option value="5">5. I'd help others in need</option>
+            </select>
+
 
             <h3>Question 4</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>What’s your idea of a romantic vacation?</option>
-                    <option value="1">1. I only speak in emojis :)</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q4">
+                <option selected>What’s your idea of a romantic vacation?</option>
+                <option value="1">1. Weekend in the Hamptons!</option>
+                <option value="2">2. Kissing in Paris (ooh la la)</option>
+                <option value="3">3. Camping</option>
+                <option value="4">4. What happens in Vegas stays in Vegas!</option>
+                <option value="5">5. Candle lit dinner ... at home.</option>
+            </select>
 
             <h3>Question 5</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>Which song best describes you?</option>
-                    <option value="1">1. I only speak in emojis :)</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q5">
+                <option selected>Which song best describes you?</option>
+                <option value="1">1. I'm just a love machine ...</option>
+                <option value="2">2. Heart break hotel</option>
+                <option value="3">3. I don't wanna be a player no more</option>
+                <option value="4">4. Despacito</option>
+                <option value="5">5. Insane in the membrane</option>
+            </select>
 
             <h3>Question 6</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>What is your biggest turn off?</option>
-                    <option value="1">1. I only speak in emojis :)</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q6">
+                <option selected>What is your biggest turn off?</option>
+                <option value="1">1. Ignorance</option>
+                <option value="2">2. Funky Breath</option>
+                <option value="3">3. Dirty Fingernails</option>
+                <option value="4">4. Facial hair</option>
+                <option value="5">5. No Humor</option>
+            </select>
 
             <h3>Question 7</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>What kind of a parent do you think you’d be?</option>
-                    <option value="1">1. I only speak in emojis :)</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q7">
+                <option selected>What kind of a parent do you think you’d be?</option>
+                <option value="1">1. Easy going</option>
+                <option value="2">2. Overbearing</option>
+                <option value="3">3. Run and Gun</option>
+                <option value="4">4. Fly by the seat of my panths</option>
+                <option value="5">5. Kids are easy ... send them to their grandparents.</option>
+            </select>
 
             <h3>Question 8</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>Where would you like to be in 5 years?</option>
-                    <option value="1">1. I only speak in emojis :)</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q8">
+                <option selected>Where would you like to be in 5 years?</option>
+                <option value="1">1. Retired</option>
+                <option value="2">2. Staying the course with my current career</option>
+                <option value="3">3. CEO</option>
+                <option value="4">4. Anywhere but here ...</option>
+                <option value="5">5. Financially secure</option>
+            </select>
 
             <h3>Question 9</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>How would your best friends describe you?</option>
-                    <option value="1">1. I only speak in emojis :)</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q9">
+                <option selected>How would your best friends describe you?</option>
+                <option value="1">1. Cool as a cucumber</option>
+                <option value="2">2. 0 - 100 real quick</option>
+                <option value="3">3. Crazy as a horse</option>
+                <option value="4">4. A great Catch</option>
+                <option value="5">5. Forever a Bachelor/Bachelorette</option>
+            </select>
 
             <h3>Question 10</h3>
-            <div class="input-group mb-3">
-                <select class="custom-select" id="inputGroupSelect02">
-                    <option selected>What did your last relationship teach you?</option>
-                    <option value="1">1. I only speak in emojis :)</option>
-                    <option value="2">2. I'm a hobbyist and DIY junkie!</option>
-                    <option value="3">3. I pick up and put down heavy things a.k.a "gym rat".</option>
-                    <option value="4">4. I spend time with people I love.</option>
-                    <option value="5">5. I have a passport and I'm not afraid to use it!</option>
-                </select>
-                <div class="input-group-append">
-                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
-                </div>
-            </div>
+            <select class="chosen-select" id="q10">
+                <option selected>What did your last relationship teach you?</option>
+                <option value="1">1. I can do bad all by myself</option>
+                <option value="2">2. Communication is key</option>
+                <option value="3">3. If you can't be with the one you love ... love the one you're with</option>
+                <option value="4">4. Relationships are for the birds</option>
+                <option value="5">5. Check his/her credit first ...</option>
+            </select>
+            <hr>
 
-            <button type="button" class="btn btn-primary btn-lg btn-block">
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="submit">
                 <span class="glyphicons glyphicons-send"></span>
                 Submit</button>
 
@@ -201,33 +156,47 @@
     </div>
 
 
-    <!-- Need to work on the Modal -->
+    <!-- Need to work on the Modal to display best match according to user input-->
 
-    <div class="modal fade" id="frienResults" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Your New Friend is ...</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                </div>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Closest Friend Match</h4>
+            <div class="divider"></div>
+            <h5 id="userMatch"></h5>
+            <img id="userMatchImage" class="materialboxed" width="650" src="">
+        </div>
+        <div class="modal-footer">
+            <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
         </div>
     </div>
 
-
-
     <script type="text/javascript">
-        // Captures the form inputs
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Oops, nothing found!"
+            },
+            ".chosen-select-width": {
+                width: "95%"
+            }
+        };
+
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+        // Capture the form inputs
         $("#submit").on("click", function (event) {
             event.preventDefault();
 
-            // Function confirms a completed form
-            function formComplete() {
+            // Form validation
+            function validateForm() {
                 var isValid = true;
                 $(".form-control").each(function () {
                     if ($(this).val() === "") {
@@ -244,11 +213,12 @@
                 return isValid;
             }
 
-            // Creates an object of all the inputted data if/when the survey is completed
-            if (formComplete()) {
+            // If all required fields are filled
+            if (validateForm()) {
+                // Create an object for the user"s data
                 var userData = {
-                    name: $("#name").val(),
-                    photo: $("#photo").val(),
+                    name: $("#userName").val(),
+                    photo: $("#userPhoto").val(),
                     scores: [
                         $("#q1").val(),
                         $("#q2").val(),
@@ -262,11 +232,10 @@
                         $("#q10").val()
                     ]
                 };
-
-                // Posts the data to the friends API.
+                // AJAX post the data to the friends API.
                 $.post("/api/friends", userData, function (data) {
 
-                    //Displays the results of the your new friend ... matched name and photo.
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
 
@@ -275,10 +244,11 @@
 
                 });
             } else {
-                alert("Please complete the survey before submitting!");
+                alert("Please complete the form before submitting!");
             }
         });
     </script>
+
 
 </body>
 
